@@ -47,7 +47,7 @@ public class KassapaateTest {
     }
     
     @Test
-    public void lataaKortilleJosPositiivinenRahamaara() {
+    public void lataaKortilleJosPositiivinenRahaMaara() {
         kassa.lataa(kortti, 5);
         
         verify(kortti, times(1)).lataa(5);
@@ -55,7 +55,7 @@ public class KassapaateTest {
     }
     
     @Test
-    public void eiLataaKortilleJosNegatiivinenRahamaara() {
+    public void eiLataaKortilleJosNegatiivinenRahaMaara() {
         kassa.lataa(kortti, -5);
         
         verify(kortti, times(0)).lataa(anyInt());
